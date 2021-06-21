@@ -21,7 +21,7 @@ function reducer(state = tasksState, action) {
         tasks: action.data
       };
     case 'DEL_TASK':
-      state.tasks.splice(action.id, 1);
+      state.tasks.splice(action.data, 1);
       return {
         tasks: [...state.tasks]
       };
