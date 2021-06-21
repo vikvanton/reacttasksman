@@ -25,8 +25,8 @@ function mapStateToProps(state) {
   }
 }
 
-const mapDipatchToProps = {
+const mapDispatchToProps = {
   delTask
 }
 
-export default connect(mapStateToProps, mapDipatchToProps) (TaskList)
+export default connect(mapStateToProps, mapDispatchToProps) (TaskList)

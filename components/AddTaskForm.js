@@ -36,7 +36,7 @@ function AddTaskForm(props) {
           value={task} />
       </div>
       <button class="btn btn-primary" type="submit">Add task</button>
-      <button class="btn btn-warning" type="button" onClick={handleClear}>Clear list</button>
+      <button class="btn btn-danger" type="button" onClick={handleClear}>Clear list</button>
       <hr />
     </form>
     );
@@ -48,9 +48,9 @@ function mapStateToProps(state) {
   }
 }
 
-const mapDipatchToProps = {
+const mapDispatchToProps = {
   addTask,
   clearTasks
 }
 
-export default connect(mapStateToProps, mapDipatchToProps) (AddTaskForm)
+export default connect(mapStateToProps, mapDispatchToProps) (AddTaskForm)
