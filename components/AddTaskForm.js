@@ -29,14 +29,16 @@ function AddTaskForm(props) {
       <div class="form-group">
         <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">
           <h2>Tasks planner</h2></label>
-        <input class="form-control form-control-lg"
-          type="text" 
-          placeholder="Place new task" 
-          id="inputLarge" 
-          onChange={handleChange} 
-          value={task} />
+        <div class="form-container">
+          <input class="form-control form-control-lg inp-form"
+            type="text" 
+            placeholder="Place new task" 
+            id="inputLarge" 
+            onChange={handleChange} 
+            value={task} />
+        </div>
       </div>
-      <div class="btn-container">
+      <div class="form-container">
         <button class="btn btn-primary btn-form" type="submit">Add task</button>
         <button class="btn btn-danger btn-form" type="button" onClick={handleClear}>Clear list</button>
       </div>

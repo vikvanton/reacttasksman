@@ -8,29 +8,31 @@ ul {
 li {
   list-style-type: none;
   padding: 10px;
-  margin: 20px 80px 20px 80px;
+  margin: 20px 20% 20px 20%;
   background-color:rgba(61, 120, 175, 0.411);
   border-radius: 10px;
 }
 form {
   margin: 0 20px 0px 20px;
 }
+.inp-form {
+  width: 80%;
+}
 .btn-form {
-  width: 40%;
-  margin: 20px 20px 10px 20px;
+  width: 30%;
+  margin: 20px 10px 10px 10px;
 }
 .btn:focus {
     box-shadow: none;
 }
-.btn-container {
+.form-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }
 .header {
   top: 20px;
-  left: 40px;
-  right: 40px;
+  left: 10%;
+  right: 10%;
   height: 235px;
   position: fixed;
   background-color:rgba(22, 25, 27, 0.9);
