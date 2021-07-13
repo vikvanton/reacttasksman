@@ -36,8 +36,10 @@ function AddTaskForm(props) {
           onChange={handleChange} 
           value={task} />
       </div>
-      <button class="btn btn-primary" type="submit">Add task</button>
-      <button class="btn btn-danger" type="button" onClick={handleClear}>Clear list</button>
+      <div class="btn-container">
+        <button class="btn btn-primary btn-form" type="submit">Add task</button>
+        <button class="btn btn-danger btn-form" type="button" onClick={handleClear}>Clear list</button>
+      </div>
     </form>
     </header>
     );
