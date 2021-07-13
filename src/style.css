@@ -8,8 +8,11 @@ ul {
 li {
   list-style-type: none;
   padding: 10px;
-  margin: 20px 20% 20px 20%;
-  background-color:rgba(61, 120, 175, 0.411);
+  margin: 20px 10% 20px 10%;
+  background-color:rgba(61, 120, 175, 0.45);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(47, 148, 206, 0.9);
   border-radius: 10px;
 }
 form {
