@@ -38,7 +38,6 @@ function AddTaskForm(props) {
       </div>
       <button class="btn btn-primary" type="submit">Add task</button>
       <button class="btn btn-danger" type="button" onClick={handleClear}>Clear list</button>
-      <hr />
     </form>
     </header>
     );

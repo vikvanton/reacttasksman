@@ -13,7 +13,7 @@ li {
   border-radius: 10px;
 }
 form {
-  margin: 10px;
+  margin: 0 40px 40px 40px;
 }
 button {
   margin: 15px 10px 0 0;
@@ -22,14 +22,19 @@ button {
     box-shadow: none;
 }
 .header {
-  top: 0px;
+  top: 30px;
   left: 30px;
   right: 30px;
   position: fixed;
-  background-color: rgba(0,0,0,1);
+  background-color:rgba(22, 25, 27, 0.9);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(47, 148, 206, 0.9);
+  border-radius: 10px;
+  text-align: center;
 }
 main {
-  margin-top: 250px;
+  margin-top: 300px;
 }
 #root {
   margin: 0 10% 0 10%;
