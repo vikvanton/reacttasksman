@@ -16,7 +16,11 @@ function TaskList(props) {
     </li>
   );
   
-  return <ul>{listTasks}</ul>;
+  return (
+    <main>  
+      <ul>{listTasks}</ul>
+    </main>
+  );
 }
 
 function mapStateToProps(state) {

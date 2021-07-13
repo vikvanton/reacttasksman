@@ -24,7 +24,8 @@ function AddTaskForm(props) {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <header class="header">
+    <form class="input-form" onSubmit={handleSubmit}>
       <div class="form-group">
         <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">
           <h2>Tasks planner</h2></label>
@@ -39,6 +40,7 @@ function AddTaskForm(props) {
       <button class="btn btn-danger" type="button" onClick={handleClear}>Clear list</button>
       <hr />
     </form>
+    </header>
     );
 }
 

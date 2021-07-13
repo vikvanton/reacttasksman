@@ -21,6 +21,17 @@ button {
 .btn:focus {
     box-shadow: none;
 }
+.header {
+  top: 0px;
+  left: 30px;
+  right: 30px;
+  height: 232px;
+  position: fixed;
+  background-color: rgba(0,0,0,0.9);
+}
+main {
+  margin-top: 258px;
+}
 #root {
   margin: 0 10% 0 10%;
 }
