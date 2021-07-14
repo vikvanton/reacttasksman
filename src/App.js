@@ -10,7 +10,7 @@ const tasksState = {
   tasks: []
 };
 
-function reducer(state=tasksState, action) {
+function reducer(state, action) {
   switch(action.type) {
     case 'ADD_TASK':
       return {
@@ -30,7 +30,7 @@ function reducer(state=tasksState, action) {
   }
 }
 
-const store = createStore(reducer);
+const store = createStore(reducer, tasksState);
 
 export default function App() {
   return (
