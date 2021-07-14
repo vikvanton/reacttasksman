@@ -1,7 +1,7 @@
 import React from "react";
 import TaskList from '../components/TaskList';
 import AddTaskForm from '../components/AddTaskForm';
-import { createStore } from 'redux'
+import { createStore, combineReducers} from 'redux'
 import { Provider } from 'react-redux'
 import "./bootstrap.min.css";
 import "./style.css";
@@ -10,7 +10,7 @@ const tasksState = {
   tasks: []
 };
 
-function reducer(state = tasksState, action) {
+function reducer(state=tasksState, action) {
   switch(action.type) {
     case 'ADD_TASK':
       return {
