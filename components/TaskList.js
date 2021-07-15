@@ -20,7 +20,7 @@ function TaskList(props) {
     <main>  
       <ul>{listTasks}</ul>
       <footer class="footer">
-        <p>ReactTaskMan - 2021</p>
+        <p>ReactTasksMan - 2021</p>
       </footer>
     </main>
   );
