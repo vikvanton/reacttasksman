@@ -1,8 +1,8 @@
 import React from "react";
-import TaskList from '../components/TaskList';
-import AddTaskForm from '../components/AddTaskForm';
-import { createStore, combineReducers} from 'redux'
-import { Provider } from 'react-redux'
+import TaskList from "../components/TaskList";
+import AddTaskForm from "../components/AddTaskForm";
+import { createStore } from "redux"
+import { Provider } from "react-redux"
 import "./bootstrap.min.css";
 import "./style.css";
 
