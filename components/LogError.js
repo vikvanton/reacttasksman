@@ -20,4 +20,3 @@ function LogError() {
 }
 
 export default LogError;
-//style={{marginRight: spacing + 'em'}} 
