@@ -53,4 +53,7 @@ form {
     left: 10%;
     right: 10%;
   }
+  .btn-form {
+    width: 40%;
+  }
 }
