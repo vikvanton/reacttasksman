@@ -19,6 +19,9 @@ function TaskList(props) {
   return (
     <main>  
       <ul>{listTasks}</ul>
+      <footer class="footer">
+        <p>ReactTaskMan - 2021</p>
+      </footer>
     </main>
   );
 }
