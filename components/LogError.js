@@ -1,13 +1,15 @@
 import React from "react"
+import Footer from "../components/Footer";
 
-function LogError() {
+export default function LogError() {
   
   function handleClick() {
     location.reload();
   }
 
   return (
-    <div id="error">
+    <>
+    <header id="error">
       <div>
         <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">
           <h2>Uncorrect pass!</h2>
@@ -15,8 +17,8 @@ function LogError() {
       </div>
       <button type="button" class="btn btn-success btn-form"
         onClick={handleClick}>Reload page</button>
-    </div>
+    </header>
+    <Footer />
+    </>
   );
 }
-
-export default LogError;

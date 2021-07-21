@@ -1,6 +1,7 @@
 import React from "react";
 import TaskList from "../components/TaskList";
 import AddTaskForm from "../components/AddTaskForm";
+import Footer from "../components/Footer";
 import { createStore } from "redux"
 import { Provider } from "react-redux"
 import "./bootstrap.min.css";
@@ -37,6 +38,7 @@ export default function App() {
     <Provider store={store}>
       <AddTaskForm />
       <TaskList />
+      <Footer />
     </Provider>
   );
 }
