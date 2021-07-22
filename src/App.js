@@ -7,25 +7,40 @@ import { Provider } from "react-redux"
 import "./bootstrap.min.css";
 import "./style.css";
 
-const tasksState = {
-  tasks: []
-};
+var tasksState;
+
+if (localStorage.getItem('tasks')) {
+  tasksState = {
+    tasks: JSON.parse(localStorage.getItem('tasks')), 
+  }
+} else {
+  tasksState = {
+    tasks: [], 
+  }
+}  
 
 function reducer(state, action) {
+  let newState;
   switch(action.type) {
     case 'ADD_TASK':
-      return {
-        tasks: [...state.tasks, action.data]
+      newState = { 
+        tasks: [...state.tasks, action.data] 
       };
+      localStorage.setItem('tasks', JSON.stringify(newState.tasks));
+      return newState;
     case 'CLEAR_TASKS':
-      return {
+      newState = {
         tasks: action.data
       };
+      localStorage.setItem('tasks', JSON.stringify(newState.tasks)); 
+      return newState;
     case 'DEL_TASK':
       state.tasks.splice(action.data, 1);
-      return {
+      newState = {
         tasks: [...state.tasks]
       };
+      localStorage.setItem('tasks', JSON.stringify(newState.tasks));
+      return newState;
     default:
       return state;
   }

@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import LogError from "../components/LogError"; 
 import App from "./App";
 
-let pass = prompt('Input pass to enter:');
+const pass = prompt('Input pass to enter:');
 if (pass == '1234') {
   ReactDOM.render(<App />, document.getElementById("root"));
 } else {
