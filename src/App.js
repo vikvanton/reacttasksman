@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import StorageManager from "../components/StorageManager"; 
 import TaskList from "../components/TaskList";
 import AddTaskForm from "../components/AddTaskForm";
 import LogError from "../components/LogError";
@@ -9,41 +10,31 @@ import "./bootstrap.min.css";
 import "./style.css";
 
 export default function App(props) {
-  const [tasksState, setTasksState] = useState({
-      tasks: [],
-    });
-
-  useEffect((state) => {
-    if (localStorage.getItem('tasks')) {
-      setTasksState({
-        tasks: JSON.parse(localStorage.getItem('tasks')),
-        }); 
-      }
-  }, []);
+  const tasksState = {
+    tasks: []
+  }
 
   function reducer(state, action) {
     let newState;
     switch(action.type) {
       case 'ADD_TASK':
-        newState = { 
+        return { 
           tasks: [...state.tasks, action.data] 
         };
-        localStorage.setItem('tasks', JSON.stringify(newState.tasks));
-        return newState;
-      case 'CLEAR_TASKS':
-        newState = {
+      case 'CLEAR_TASKS': 
+        return {
           tasks: action.data
         };
-        localStorage.setItem('tasks', JSON.stringify(newState.tasks)); 
-        return newState;
       case 'DEL_TASK':
         let newTasks = state.tasks;
         newTasks.splice(action.data, 1);
-        newState = {
+        return {
           tasks: [...newTasks]
         };
-        localStorage.setItem('tasks', JSON.stringify(newState.tasks));
-        return newState;
+      case 'LOAD_FROM_STORAGE':
+        return { 
+          tasks: action.data 
+        }; 
       default:
         return state;
     }
@@ -54,6 +45,7 @@ export default function App(props) {
 
   if(props.pass == "1234") {
     content = <>
+      <StorageManager />
       <AddTaskForm />
       <TaskList />
       </>

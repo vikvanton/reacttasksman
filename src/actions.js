@@ -18,3 +18,10 @@ export function delTask(id) {
     data: id
   }
 }
+
+export function loadFromStorage(tasks) {
+  return {
+    type: 'LOAD_FROM_STORAGE',
+    data: tasks
+  }
+}

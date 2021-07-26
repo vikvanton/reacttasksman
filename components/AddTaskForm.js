@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
-import {connect} from 'react-redux';
-import {addTask, clearTasks} from '../src/actions';
+import React, {useState} from "react";
+import {connect} from "react-redux";
+import {addTask, clearTasks} from "../src/actions";
 
 function AddTaskForm(props) {
   const [ task, setTask ] = useState("");

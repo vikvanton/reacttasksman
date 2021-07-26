@@ -1,6 +1,6 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {delTask} from '../src/actions';
+import React from "react";
+import {connect} from "react-redux";
+import {delTask} from "../src/actions";
 
 function TaskList(props) {
   const arr = props.tasks;
