@@ -15,7 +15,6 @@ export default function App(props) {
   }
 
   function reducer(state, action) {
-    let newState;
     switch(action.type) {
       case 'ADD_TASK':
         return { 
