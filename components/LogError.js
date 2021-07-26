@@ -1,5 +1,4 @@
 import React from "react"
-import Footer from "../components/Footer";
 
 export default function LogError() {
   
@@ -8,7 +7,6 @@ export default function LogError() {
   }
 
   return (
-    <>
     <header id="error">
       <div>
         <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">
@@ -18,7 +16,5 @@ export default function LogError() {
       <button type="button" class="btn btn-success btn-form"
         onClick={handleClick}>Reload page</button>
     </header>
-    <Footer />
-    </>
   );
 }

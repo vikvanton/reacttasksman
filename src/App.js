@@ -1,6 +1,7 @@
 import React from "react";
 import TaskList from "../components/TaskList";
 import AddTaskForm from "../components/AddTaskForm";
+import LogError from "../components/LogError";
 import Footer from "../components/Footer";
 import { createStore } from "redux"
 import { Provider } from "react-redux"
@@ -48,11 +49,19 @@ function reducer(state, action) {
 
 const store = createStore(reducer, tasksState);
 
-export default function App() {
-  return (
-    <Provider store={store}>
+export default function App(props) {
+  let content;
+  if(props.pass == "1234") {
+    content = <>
       <AddTaskForm />
       <TaskList />
+      </>
+  } else {
+    content = <LogError />
+  }
+  return (
+    <Provider store={store}>
+      {content}
       <Footer />
     </Provider>
   );
