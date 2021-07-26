@@ -14,7 +14,7 @@ export default function LogError() {
         </label>
       </div>
       <button type="button" class="btn btn-success btn-form"
-        onClick={handleClick}>Reload page</button>
+        onClick={handleClick}>Try again</button>
     </header>
   );
 }
