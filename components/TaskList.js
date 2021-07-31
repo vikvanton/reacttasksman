@@ -19,7 +19,6 @@ function TaskList(props) {
   return (
     <main>
       <ul>{listTasks}</ul>
-      <div id="back"></div>
     </main>
   );
 }

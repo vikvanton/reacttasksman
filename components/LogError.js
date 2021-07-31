@@ -7,7 +7,6 @@ export default function LogError() {
   }
 
   return (
-    <>
     <header id="error">
       <div>
         <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">
@@ -17,7 +16,5 @@ export default function LogError() {
       <button type="button" class="btn btn-success btn-form"
         onClick={handleClick}>Try again</button>
     </header>
-    <div id="back"></div>
-    </>
   );
 }
