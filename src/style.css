@@ -19,7 +19,7 @@
   bottom: 30px;
   left: 30.2%;
   right: 30.2%;
-  background-color: rgba(22, 25, 27, 0.9);
+  background-color: rgba(22, 25, 27, 0.6);
 }
 h1, h2, p {
   font-family: Lato;
@@ -40,7 +40,6 @@ li {
   border-top: rgba(61, 120, 175, 0.45);
   border-bottom: rgba(61, 120, 175, 0.45);
   border-color: rgba(47, 148, 206, 0.9);
-  border-radius: 15px;
 }
 form {
   margin: 0 20px 0px 20px;
