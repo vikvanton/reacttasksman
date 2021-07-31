@@ -1,8 +1,9 @@
 #error {
+  z-index: 3;
   top: 0px;
   left: 30%;
   right: 30%;
-  height: 205px;
+  height: 235px;
   position: fixed;
   background-color:rgba(22, 25, 27, 0.9);
   border-width: 4px;
@@ -10,6 +11,15 @@
   border-color: rgba(47, 148, 206, 0.9);
   border-bottom: rgba(22, 25, 27, 0.9);
   text-align: center;
+}
+#back {
+  z-index: 1;
+  position: fixed;
+  top: 235px;
+  bottom: 30px;
+  left: 30.2%;
+  right: 30.2%;
+  background-color: rgba(22, 25, 27, 0.9);
 }
 h1, h2, p {
   font-family: Lato;
@@ -19,6 +29,8 @@ ul {
   margin: 256px 0 50px 0;
 }
 li {
+  position: relative;
+  z-index: 2;
   list-style-type: none;
   padding: 10px;
   margin: 20px 30% 20px 30%;
@@ -48,6 +60,7 @@ form {
   justify-content: center;
 }
 .header {
+  z-index: 3;
   top: 0px;
   left: 30%;
   right: 30%;
@@ -61,6 +74,7 @@ form {
   text-align: center;
 }
 .footer {
+  z-index: 3;
   bottom: 0px;
   left: 30%;
   right: 30%;
@@ -81,6 +95,10 @@ form {
   .header, .footer, #error {
     left: 10%;
     right: 10%;
+  }
+  #back {
+    left: 10.2%;
+    right: 10.2%;
   }
   .btn-form {
     width: 40%;
