@@ -47,8 +47,8 @@ form {
 .inp-form {
   width: 90%;
 }
+
 .btn:focus {
-  outline: none;
   box-shadow: none;
 }
 .btn-form {
@@ -88,6 +88,7 @@ form {
   margin-top: 20px;
   text-align: center;
 }
+
 @media screen and (max-width: 1176px) {
   li {
     margin: 20px 10% 20px 10%;
