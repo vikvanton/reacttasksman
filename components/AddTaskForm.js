@@ -39,8 +39,8 @@ function AddTaskForm(props) {
         </div>
       </div>
       <div class="form-container">
-        <button class="btn btn-outline-success btn-form" type="submit">Add task</button>
-        <button class="btn btn-outline-danger btn-form" type="button" onClick={handleClear}>Clear list</button>
+        <button class="btn btn-success btn-form" type="submit">Add task</button>
+        <button class="btn btn-danger btn-form" type="button" onClick={handleClear}>Clear list</button>
       </div>
     </form>
     </header>
