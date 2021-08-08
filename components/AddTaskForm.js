@@ -30,7 +30,7 @@ function AddTaskForm(props) {
         <label class="col-form-label col-form-label-lg mt-4" for="inputLarge">
           <h2>Tasks planner</h2></label>
         <div class="form-container">
-          <input class="inp-form form-control-lg"
+          <input class="inp-form"
             type="text" 
             placeholder="Place new task" 
             id="inputLarge" 
