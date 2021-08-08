@@ -47,12 +47,13 @@ form {
 .inp-form {
   width: 90%;
 }
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
 .btn-form {
   width: 30%;
   margin: 20px 10px 10px 10px;
-}
-.btn:focus {
-    box-shadow: none;
 }
 .form-container {
   display: flex;
