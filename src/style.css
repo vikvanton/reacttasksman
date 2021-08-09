@@ -113,9 +113,6 @@ form {
   .btn-form {
     width: 40%;
   }
-  .btn:hover {
-    background-color: rgba(22, 25, 27, 0.6);
-  }
 }
 
 @media screen and (max-width: 800px) {
