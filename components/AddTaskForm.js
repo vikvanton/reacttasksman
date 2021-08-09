@@ -19,8 +19,10 @@ function AddTaskForm(props) {
   }
 
   function handleClear() {
-    if (props.tasks.length != 0) props.clearTasks();
-    else alert('Empty list of tasks!');
+    if (props.tasks.length === 0) 
+      alert('Empty list of tasks!');
+    else if (confirm("This action will delete all tasks. Are you sure?"))
+      props.clearTasks();
   }
 
   return (

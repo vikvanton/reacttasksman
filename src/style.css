@@ -15,8 +15,8 @@
 #back {
   z-index: 1;
   position: fixed;
-  top: 215px;
-  bottom: 30px;
+  top: 0px;
+  bottom: 0px;
   left: 30.2%;
   right: 30.2%;
   background-color: rgba(22, 25, 27, 0.6);
