@@ -13,7 +13,7 @@ export default function LogError() {
           <h2>Uncorrect pass!</h2>
         </label>
       </div>
-      <button type="button" class="btn btn-primary btn-form"
+      <button type="button" class="btn btn-outline-primary btn-form"
         onClick={handleClick}>Try again</button>
     </header>
   );

@@ -49,11 +49,16 @@ form {
   background-color: rgba(22, 25, 27, 0.6);
   color: white;
   border-style: solid;
-  border-width: 2px;
+  border-width: 1px;
   border-color: rgba(47, 148, 206, 0.9);
 }
 .inp-form:focus{
-  outline: rgba(61, 120, 175, 0.45) solid 4px;
+  outline: rgba(61, 120, 175, 0.45) solid 5px;
+  background-color: rgb(228, 241, 250);
+  color: black;
+}
+.btn:hover {
+  background-color: black;
 }
 .btn:focus {
   box-shadow: none;
